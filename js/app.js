@@ -79,14 +79,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
-
+// testArrway[2] = 4
 function sumArray(sumArr) { //eslint-disable-line
-
+  let sumOne = sum(sumArr[0],sumArr[1])[0];
+  let sumDone = sum(sumOne, sumArr[2])[0];
+  let spr = `${sumArr} was passed in as an array of numbers, and ${sumDone} is their sum.`;
+  return[sumDone, spr];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
